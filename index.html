@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página Web</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #34495E ;
+        }
+        header {
+            background-color: #333;
+            color: #f0c507;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #4a14ca;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #e6db81;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            color: aliceblue;
+        }
+        footer {
+            background-color: #333;
+            color: #f0c507;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mi Primera Página Web</h1>
+        <h1>Web Development</h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -17,10 +54,24 @@
     </nav>
     <section>
         <h2>Bienvenido</h2>
-        <p>¡Hola! Esta es mi primera página web.</p>
+        <p>Mis primeros pasos como desarrollador Web.</p>
+        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/escritorio-casa-portatil-2565497.jpg" width="500" height="300" alt="Programacion Web">
     </section>
     <footer>
         <p>Derechos de autor &copy; 2024 - Mi Página Web</p>
     </footer>
+    <script>
+        // Aquí va el código JavaScript
+        // Este es solo un ejemplo simple de JavaScript para cambiar el texto del encabezado cuando se hace clic en él.
+
+        // Obtenemos una referencia al elemento del encabezado.
+        const header = document.querySelector('header h1');
+
+        // Agregamos un evento de clic al encabezado.
+        header.addEventListener('click', function() {
+            // Cambiamos el texto del encabezado.
+            header.textContent = "¡Has hecho clic en el encabezado!";
+        });
+    </script>
 </body>
 </html>
